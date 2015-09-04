@@ -19,6 +19,14 @@ var routes = require('./routes/index');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/mean-server-template');
 
+
+//needed for production uncomment when deploying
+// var mongoose = require( 'mongoose' );
+// var dbURI = 'mongodb://localhost/Loc8r';
+// if (process.env.NODE_ENV === 'production') {
+//     dbURI= process.env.MONGOLAB_URI;
+// }
+// mongoose.connect(dbURI);
 // start running express, and save the configurations for the express
 // "app" with the variable `app`.
 var app = express();
